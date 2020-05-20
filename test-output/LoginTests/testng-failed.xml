@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LoginTests]" parallel="tests">
+  <parameter name="password" value="SuperSecretPassword!"/>
+  <parameter name="username" value="tomsmith"/>
+  <test thread-count="5" name="LogInTest-FireFox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.NegativeLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="incorrectUsenameTest" invocation-numbers="0"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.NegativeLoginTest -->
+    </classes>
+  </test> <!-- LogInTest-FireFox(failed) -->
+  <test thread-count="5" name="LogInTest-Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.NegativeLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="incorrectPasswordTest" invocation-numbers="0"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.NegativeLoginTest -->
+    </classes>
+  </test> <!-- LogInTest-Chrome(failed) -->
+</suite> <!-- Failed suite [LoginTests] -->

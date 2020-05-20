@@ -1,0 +1,10 @@
+com\herokuapp\theinternet\miscellaneous\FileUploadPageTest.class
+com\herokuapp\theinternet\miscellaneous\JavascriptErrorsTest.class
+com\herokuapp\theinternet\dynamicpages\test\HoverOverAndClickLinkTest.class
+com\herokuapp\theinternet\login\test\PositiveLoginTest.class
+com\herokuapp\theinternet\dynamicpages\test\StaleElementsPageTest.class
+com\herokuapp\theinternet\dynamicpages\test\HiddenElementOnPageTest.class
+com\herokuapp\theinternet\dynamicpages\test\DynamicallyLoadedPageEmements2Test.class
+com\herokuapp\theinternet\dynamicpages\test\ScrollLargePagesWithJSExecutorTest.class
+com\herokuapp\theinternet\login\test\NegativeLoginTest.class
+com\herokuapp\theinternet\forgotpassword\test\ForgotPasswordTest.class

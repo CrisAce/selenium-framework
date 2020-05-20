@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" guice-stage="DEVELOPMENT" name="Failed suite [RegressionTestSuite]" parallel="tests">
+  <test thread-count="6" name="PositiveLoginTest-Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.PositiveLoginTest">
+        <methods>
+          <include name="logInTest"/>
+          <include name="setUp"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.PositiveLoginTest -->
+    </classes>
+  </test> <!-- PositiveLoginTest-Firefox(failed) -->
+  <test thread-count="6" name="PositiveLoginTest-Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.PositiveLoginTest">
+        <methods>
+          <include name="logInTest"/>
+          <include name="setUp"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.PositiveLoginTest -->
+    </classes>
+  </test> <!-- PositiveLoginTest-Chrome(failed) -->
+  <test thread-count="6" name="ForgotPasswordTest-Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.forgotpassword.test.ForgotPasswordTest">
+        <methods>
+          <include name="forgotPasswordTest"/>
+          <include name="setUp"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.forgotpassword.test.ForgotPasswordTest -->
+    </classes>
+  </test> <!-- ForgotPasswordTest-Firefox(failed) -->
+  <test thread-count="6" name="ForgotPasswordTest-Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.forgotpassword.test.ForgotPasswordTest">
+        <methods>
+          <include name="forgotPasswordTest"/>
+          <include name="setUp"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.forgotpassword.test.ForgotPasswordTest -->
+    </classes>
+  </test> <!-- ForgotPasswordTest-Chrome(failed) -->
+  <test thread-count="6" name="NegativeLoginTest-Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.NegativeLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="incorrectPasswordTest"/>
+          <include name="incorrectUsenameTest"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.NegativeLoginTest -->
+    </classes>
+  </test> <!-- NegativeLoginTest-Firefox(failed) -->
+  <test thread-count="6" name="NegativeLoginTest-Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.NegativeLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="incorrectPasswordTest" invocation-numbers="0 1"/>
+          <include name="incorrectUsenameTest"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.NegativeLoginTest -->
+    </classes>
+  </test> <!-- NegativeLoginTest-Chrome(failed) -->
+</suite> <!-- Failed suite [RegressionTestSuite] -->

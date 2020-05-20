@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SmokeTestSuite]" parallel="tests">
+  <test thread-count="2" verbose="0" name="PositiveLoginTest.java(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.PositiveLoginTest">
+        <methods>
+          <include name="logInTest"/>
+          <include name="setUp"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.PositiveLoginTest -->
+    </classes>
+  </test> <!-- PositiveLoginTest.java(failed) -->
+  <test thread-count="2" verbose="0" name="ForgotPasswordTest.java(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.forgotpassword.test.ForgotPasswordTest">
+        <methods>
+          <include name="forgotPasswordTest"/>
+          <include name="setUp"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.forgotpassword.test.ForgotPasswordTest -->
+    </classes>
+  </test> <!-- ForgotPasswordTest.java(failed) -->
+  <test thread-count="2" verbose="0" name="NegativeLoginTest.java(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.NegativeLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="incorrectPasswordTest" invocation-numbers="0"/>
+          <include name="incorrectUsenameTest"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.NegativeLoginTest -->
+    </classes>
+  </test> <!-- NegativeLoginTest.java(failed) -->
+</suite> <!-- Failed suite [SmokeTestSuite] -->

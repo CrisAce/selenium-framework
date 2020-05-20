@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SmokeTestSuite" verbose="1" parallel="tests" thread-count="2" >
+	<test name="PositiveLoginTest.java">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.login.test.PositiveLoginTest" />
+		</classes>
+	</test>
+		<test name="NegativeLoginTest.java">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.login.test.NegativeLoginTest" />
+		</classes>
+	</test>
+		<test name="ForgotPasswordTest.java">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.forgotpassword.test.ForgotPasswordTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PosiviteLoginSuite" verbose="1">
+	<listeners>
+		<listener
+			class-name="com.herokuapp.theinternet.base.TestListener"></listener>
+	</listeners>
+
+	<test name="PosiviteLoginTest">
+		<parameter name="username" value="tomsmith"></parameter>
+		<parameter name="password" value="SuperSecretPassword!"></parameter>
+		<classes>
+			<class
+				name="com.herokuapp.theinternet.login.test.PositiveLoginTest">
+			</class>
+		</classes>
+	</test>
+</suite>

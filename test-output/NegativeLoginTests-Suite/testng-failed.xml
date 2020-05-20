@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [NegativeLoginTests-Suite]">
+  <test thread-count="5" name="NegativeLoginTest-test(failed)">
+    <classes>
+      <class name="com.herokuapp.theinternet.login.test.NegativeLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="incorrectUsenameTest" invocation-numbers="0 1"/>
+          <include name="thearDown"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.login.test.NegativeLoginTest -->
+    </classes>
+  </test> <!-- NegativeLoginTest-test(failed) -->
+</suite> <!-- Failed suite [NegativeLoginTests-Suite] -->
